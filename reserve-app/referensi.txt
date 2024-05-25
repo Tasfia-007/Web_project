@@ -1,0 +1,14 @@
+// command
+composer require laravel/breeze --dev
+
+php artisan breeze:install
+npm install && npm run dev
+php artisan migrate
+
+
+php artisan make:seeder Admin
+
+php artisan make:migration create_category_menu_table --create="category_menu"
+
+// Referensi
+alpinetoolbox.com
