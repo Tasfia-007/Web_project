@@ -41,17 +41,13 @@ Route::get('/cancellations/create', [CancellationController::class, 'create'])->
 
 
 Route::middleware('user')->group(function () {
-    // Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    // Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    // Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
- 
-    // Route::get('/user', [UserreservationController::class, 'index'])->name('user.reservations.index');
+    
     Route::get('/user/reservations', [UserreservationController::class, 'index'])->name('user.reservations.index');
 
     Route::get('/user/reservations/edit', [UserreservationController::class, 'edit'])->name('user.reservations.edit');
     Route::put('/user/reservations/update', [UserreservationController::class, 'update'])->name('user.reservations.update');
     Route::delete('/user/reservations/delete', [UserreservationController::class, 'destroy'])->name('user.reservations.destroy');
-  //  Route::resource('/user/create', [UserreservationController::class, 'index'])->name('index');
+  
 });
 
 
@@ -63,7 +59,7 @@ Route::middleware(['admin'])->name('admin.')->prefix('admin')->group(function ()
     Route::resource('/reservations', ReservationController::class);
 });
 
-// require __DIR__ . '/auth.php';
+
 
 
 Route::get('/register', 'App\Http\Controllers\AuthController@showRegisterForm')->name('register');
@@ -72,4 +68,3 @@ Route::get('/login', 'App\Http\Controllers\AuthController@showLoginForm')->name(
 Route::post('/login', 'App\Http\Controllers\AuthController@login');
 Route::post('/logout', 'App\Http\Controllers\AuthController@logout')->name('logout');
 
-//Route::get('/dashboard', 'App\Http\Controllers\DashboardController@index')->name('dashboard')->middleware('auth');
