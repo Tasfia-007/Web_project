@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+//http req control
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;

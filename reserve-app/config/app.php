@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Facade;
+//ekhane kono code thkbe na basically shudhu configuration 
 
 return [
 
