@@ -1,15 +1,13 @@
 <x-guest-layout>
     <!-- Main Hero Content -->
     <div class="container max-w-lg px-4 py-32 mx-auto text-left bg-center bg-no-repeat bg-cover md:max-w-none md:text-center"
-        style="background-image: url('https://cdn.pixabay.com/photo/2016/11/18/14/39/beans-1834984_960_720.jpg')">
-        <h1
-            class="font-mono text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 md:text-center sm:leading-none lg:text-5xl">
-            <span class="inline md:block">Welcome To Larainfo Restaurant</span>
-        </h1>
-        <div class="mx-auto mt-2 text-green-50 md:text-center lg:text-lg">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta voluptatem ab necessitatibus illo
-            praesentium
-            culpa excepturi quae commodi quaerat,
+        style="background-image: url('https://th.bing.com/th/id/OIP.SlvPkpiGkWEd_DDcX9RVMgHaEo?rs=1&pid=ImgDetMain')">
+        <h1 class="welcome-text">            
+    <span>Welcome To Lazeez Dine</span>
+</h1>
+
+        <div class="welcome-det">
+        Welcome to "Lazeez Dine", a culinary paradise that brings the world to your plate. Serving an eclectic mix of Italian, Indian, Chinese, Bangladeshi, and fast food, we promise a dining experience that is as diverse as it is delicious. Come, savor the flavors of the world at Lazeez Dine! 😊
         </div>
         <div class="flex flex-col items-center mt-12 text-center">
             <span class="relative inline-flex w-full md:w-auto">
@@ -33,11 +31,13 @@
                         <h2 class="text-4xl text-green-600">Welcome</h2>
                         <!-- </h1> -->
                         <p class="mx-auto text-base text-gray-500 sm:max-w-md lg:text-xl md:max-w-3xl">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus nemo incidunt
-                            praesentium, ipsum
-                            culpa minus eveniet, id nesciunt excepturi sit voluptate repudiandae. Explicabo, incidunt
-                            quia.
-                            Repellendus mollitia quaerat est voluptas!
+                        "Lazeez Dine" began as a dream - a dream to create a place where food lovers could experience the rich tapestry of global cuisine under one roof. Our journey started with a simple idea: to serve food that is as diverse as the people who enjoy it. 
+
+From the vibrant flavors of Italy to the aromatic spices of India, the bold tastes of China to the traditional dishes of Bangladesh, and the comfort of fast food - we wanted to bring it all together. Our menu is a testament to our journey, a blend of different cultures and tastes.
+
+Today, "Lazeez Dine" is more than just a restaurant. It's a place where flavors meet, cultures mingle, and people come together. It's a celebration of diversity, unity, and of course, good food. 
+
+We invite you to join us on this delicious journey. Welcome to "Lazeez Dine" - where the world dines together.
                         </p>
                         <div class="relative flex">
                             <a href="#_"
@@ -71,11 +71,7 @@
                             class="mb-4 text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
                             WHY CHOOSE US?</h2>
 
-                        <p class="mb-4 font-medium tracking-tight text-gray-400 xl:mb-6">Lorem ipsum dolor sit amet
-                            consectetur
-                            adipisicing elit. Natus hic atque magni minus aliquam, eos quam incidunt nam iusto sunt
-                            voluptates
-                            inventore a veritatis doloremque corrupti. Veritatis est expedita cupiditate!</p>
+                        <p class="mb-4 font-medium tracking-tight text-gray-400 xl:mb-6">"Lazeez Dine offers a diverse menu of global cuisines, prepared with quality ingredients and served in a welcoming atmosphere. Our commitment to excellent service and value ensures a memorable dining experience for all." </p>
                         <ul>
                             <li class="flex items-center py-2 space-x-4 xl:py-3">
                                 <svg class="w-8 h-8 text-gray-500" fill="none" stroke="currentColor"
@@ -142,59 +138,44 @@
     <section class="pt-4 pb-12 bg-gray-800">
         <div class="my-16 text-center">
             <h2 class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
-                Testimonial </h2>
-            <p class="text-xl text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. soluta sapient</p>
+                Our Chefs</h2>
+            
         </div>
         <div class="grid gap-2 lg:grid-cols-3">
             <div class="max-w-md p-4 bg-white rounded-lg shadow-lg">
                 <div class="flex justify-center -mt-16 md:justify-end">
-                    <img class="object-cover w-20 h-20 border-2 border-green-500 rounded-full"
-                        src="https://images.unsplash.com/photo-1499714608240-22fc6ad53fb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80">
+                    
                 </div>
                 <div>
                     <h2 class="text-3xl font-semibold text-gray-800">Food</h2>
-                    <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores
-                        deserunt
-                        ea doloremque natus error, rerum quas odio quaerat nam ex commodi hic, suscipit in a veritatis
-                        pariatur
-                        minus consequuntur!</p>
+                    <p class="mt-2 text-gray-600"><br><h1><strong>Food</strong> <br>Ni Hao! I'm Xin Yao, and I specialize in Chinese cuisine at Lazeez Dine. My fascination with Chinese food began during my travels in the Sichuan province, known for its bold and spicy flavors. At Lazeez Dine, I aim to bring these flavors to your plate, with dishes like Kung Pao Chicken and Mapo Tofu. Come, embark on a culinary adventure with us, and explore the diverse flavors of China!</p>
                 </div>
                 <div class="flex justify-end mt-4">
-                    <a href="#" class="text-xl font-medium text-green-500">John Doe</a>
+                    <a href="#" class="text-xl font-medium text-green-500">Chef Xin Yao</a>
                 </div>
             </div>
             <div class="max-w-md p-4 bg-white rounded-lg shadow-lg">
                 <div class="flex justify-center -mt-16 md:justify-end">
-                    <img class="object-cover w-20 h-20 border-2 border-green-500 rounded-full"
-                        src="https://cdn.pixabay.com/photo/2018/01/04/21/15/young-3061652__340.jpg">
+                    
                 </div>
                 <div>
                     <h2 class="text-3xl font-semibold text-gray-800">Food</h2>
-                    <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores
-                        deserunt
-                        ea doloremque natus error, rerum quas odio quaerat nam ex commodi hic, suscipit in a veritatis
-                        pariatur
-                        minus consequuntur!</p>
+                    <p class="mt-2 text-gray-600"><br><h1><strong>Food</strong> <br>Hey there, I'm Mahmud, one of the proud chefs at Lazeez Dine. My culinary journey began in the bustling streets of Dhaka, where I discovered my passion for Bangladeshi cuisine. At Lazeez Dine, I bring this passion to life, creating dishes that are a true reflection of our rich culture. From traditional pithas to hearty biryanis, my goal is to give you a taste of Bangladesh in every bite.</p>
                 </div>
                 <div class="flex justify-end mt-4">
-                    <a href="#" class="text-xl font-medium text-green-500">John Doe</a>
+                    <a href="#" class="text-xl font-medium text-green-500">Chef Mahmud</a>
                 </div>
             </div>
             <div class="max-w-md p-4 bg-white rounded-lg shadow-lg">
                 <div class="flex justify-center -mt-16 md:justify-end">
-                    <img class="object-cover w-20 h-20 border-2 border-green-500 rounded-full"
-                        src="https://cdn.pixabay.com/photo/2018/01/18/17/48/purchase-3090818__340.jpg">
+                   
                 </div>
                 <div>
                     <h2 class="text-3xl font-semibold text-gray-800">Food</h2>
-                    <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores
-                        deserunt
-                        ea doloremque natus error, rerum quas odio quaerat nam ex commodi hic, suscipit in a veritatis
-                        pariatur
-                        minus consequuntur!</p>
+                    <p class="mt-2 text-gray-600"><br><h1><strong>Food</strong> <br>Ciao! I'm Nicolas, and I bring the flavors of Italy to Lazeez Dine. My love for Italian cuisine started in the rustic kitchens of Tuscany, where I learned the art of making the perfect pasta. At Lazeez Dine, I strive to recreate the warmth and comfort of Italian food, from creamy risottos to tangy bruschettas. Join us for a meal, and experience the magic of Italy right here!</p>
                 </div>
                 <div class="flex justify-end mt-4">
-                    <a href="#" class="text-xl font-medium text-green-500">John Doe</a>
+                    <a href="#" class="text-xl font-medium text-green-500">Chef Nicolas</a>
                 </div>
             </div>
         </div>

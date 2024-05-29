@@ -1,6 +1,40 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
+    <style>
+.welcome-text {
+    font-family: monospace;
+    font-size: 3em;
+    font-weight: 800;
+    background-clip: text;
+    text-align: center;
+    line-height: 1.2;
+    color: white;
+}
+
+.welcome-det {
+    font-family: monospace;
+    font-size: 3em;
+    font-weight: 800;
+    background-clip: text;
+    text-align: center;
+    line-height: 1.2;
+    color: white;
+}
+
+@media (min-width: 640px) {
+    .welcome-text {
+      font-size: 5em;
+    }
+
+    .welcome-det {
+      font-size: 2em;
+    }
+}
+
+
+</style>
+
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -19,7 +53,7 @@
           <div class="flex items-center justify-between">
             <a class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 md:text-2xl hover:text-green-400"
               href="#">
-              TailFood
+              Lazeez Dine
             </a>
             <!-- Mobile menu button -->
             <div @click="isOpen = !isOpen" class="flex md:hidden">
@@ -45,45 +79,11 @@
               href="{{ route('menus.index') }}">Our Menu</a>
             <a class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 hover:text-green-400"
               href="{{ route('reservations.step.one') }}">Make Reservation</a>
-        @if (Route::has('login'))
-        @if (session()->has('user'))
-
-        @if(session('user')->is_admin)
-        <a
-            href="{{route('admin.index')}}"
-            class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 hover:text-green-400"
-        >
-           Admin Dashboard
-        </a>
-        @else
-        <a
-            href="{{route('dashboard')}}"
-            class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 hover:text-green-400"
-        >
-           Dashboard
-        </a>
-        @endif
-
-    @else
-        <a
-            href="{{ route('login') }}"
-            class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 hover:text-green-400"
-        >
-            Log in
-        </a>
-
-        @if (Route::has('register'))
-            <a
-                href="{{ route('register') }}"
-                class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 hover:text-green-400"
-            >
-                Register
-            </a>
-        @endif
-    @endif
-@endif
-
-
+              <a class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 hover:text-green-400"
+              href="{{ route('login') }}">Login</a>
+              <a class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 hover:text-green-400"
+              href="{{ route('register') }}">Register</a>
+            
           </div>
         </nav>
       </div>
@@ -101,13 +101,13 @@
             </ul>
           </div>
           <div class="flex justify-center mt-4 lg:mt-0">
-            <a>
+            <a href="https://www.facebook.com">
               <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 class="w-6 h-6 text-blue-600" viewBox="0 0 24 24">
                 <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
               </svg>
             </a>
-            <a class="ml-3">
+            <a href="https://twitter.com/">
               <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 class="w-6 h-6 text-blue-300" viewBox="0 0 24 24">
                 <path
@@ -115,14 +115,14 @@
                 </path>
               </svg>
             </a>
-            <a class="ml-3">
+            <a href="https://www.instagram.com">
               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 class="w-6 h-6 text-pink-400" viewBox="0 0 24 24">
                 <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
                 <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
               </svg>
             </a>
-            <a class="ml-3">
+            <a href="https://www.linkedin.com">
               <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                 stroke-width="0" class="w-6 h-6 text-blue-500" viewBox="0 0 24 24">
                 <path stroke="none"
