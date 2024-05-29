@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Hash;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+//login controller 
 
 class AuthController extends Controller
 {

@@ -48,10 +48,8 @@ class ReservationController extends Controller
 {
     $reservation = $request->session()->get('reservation');
 
-    // Check if $reservation is null
+  
     if (!$reservation) {
-        // Redirect back or to a different page, show an error, etc.
-        // Here's an example:
         return redirect()->back()->withErrors(['error' => 'No reservation found in session.']);
     }
 
